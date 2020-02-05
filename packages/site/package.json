@@ -1,6 +1,6 @@
 {
   "name": "@rshackleton/site",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.4",
   "main": "index.js",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
   "license": "MIT",
@@ -10,7 +10,7 @@
     "develop": "gatsby develop"
   },
   "dependencies": {
-    "@rshackleton/gatsby-theme-kontent": "0.0.0",
+    "@rshackleton/gatsby-theme-kontent": "^0.1.0-beta.4",
     "dotenv": "8.2.0",
     "gatsby": "2.19.12",
     "gatsby-image": "2.2.32",

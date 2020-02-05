@@ -1,6 +1,6 @@
 {
   "name": "@rshackleton/gatsby-theme-kontent",
-  "version": "0.0.0",
+  "version": "0.1.0-beta.4",
   "main": "index.js",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
   "license": "MIT",
@@ -9,6 +9,6 @@
   },
   "dependencies": {
     "@kentico/gatsby-source-kontent": "4.3.0",
-    "@rshackleton/gatsby-transformer-kontent-image": "0.1.0-beta.3"
+    "@rshackleton/gatsby-transformer-kontent-image": "^0.1.0-beta.4"
   }
 }

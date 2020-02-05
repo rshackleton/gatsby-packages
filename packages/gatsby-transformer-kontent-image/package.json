@@ -1,7 +1,7 @@
 {
   "name": "@rshackleton/gatsby-transformer-kontent-image",
   "description": "Transforms assets from Kontent.ai into nodes usable by Gatsby Image",
-  "version": "0.1.0-beta.3",
+  "version": "0.1.0-beta.4",
   "author": "Richard Shackleton <richardshackleton@netconstruct.co.uk>",
   "bugs": {
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
@@ -51,7 +51,6 @@
     "prepare": "cross-env NODE_ENV=production npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
-    "version": "npm run format && git add -A src",
-    "postversion": "git push && git push --tags"
+    "version": "npm run format && git add -A src"
   }
 }
