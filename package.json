@@ -11,6 +11,7 @@
   },
   "workspaces": [
     "packages/gatsby-theme-kontent",
+    "packages/gatsby-transformer-kontent-image",
     "packages/site"
   ]
 }

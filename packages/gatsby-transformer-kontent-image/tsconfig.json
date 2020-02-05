@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2020"],
+    "module": "CommonJS",
+    "moduleResolution": "Node",
+    "outDir": "",
+    "resolveJsonModule": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "target": "ES2019"
+  },
+  "include": ["src/**/*", "gatsby-node.ts"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

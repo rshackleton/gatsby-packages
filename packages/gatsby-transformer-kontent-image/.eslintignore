@@ -1,0 +1,4 @@
+# Ignore compiled files
+fragments.js
+gatsby-*.js
+src/**/*.js
