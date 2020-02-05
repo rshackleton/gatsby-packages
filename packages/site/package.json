@@ -1,13 +1,10 @@
 {
   "name": "@rshackleton/site",
+  "description": "Gatsby site to demonstrate the packages in this monorepo.",
   "version": "0.1.0-beta.5",
-  "main": "index.js",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "clean": "gatsby clean",
-    "develop": "gatsby develop"
+  "bugs": {
+    "url": "https://github.com/rshackleton/gatsby-packages/issues"
   },
   "dependencies": {
     "@rshackleton/gatsby-theme-kontent": "^0.1.0-beta.5",
@@ -16,5 +13,24 @@
     "gatsby-image": "2.2.32",
     "react": "16.12.0",
     "react-dom": "16.12.0"
+  },
+  "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/site#readme",
+  "keywords": [
+    "gatsby",
+    "gatsby-site",
+    "kontent"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rshackleton/gatsby-packages.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"*.ts\" \"*.js\"",
+    "version": "npm run format && git add -A *"
   }
 }

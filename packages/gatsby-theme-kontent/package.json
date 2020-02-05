@@ -1,14 +1,32 @@
 {
   "name": "@rshackleton/gatsby-theme-kontent",
+  "description": "Gatsby theme containing plugins to super-charge Kentico Kontent projects.",
   "version": "0.1.0-beta.5",
-  "main": "index.js",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
-  "license": "MIT",
-  "peerDependencies": {
-    "gatsby": "^2.19.12"
+  "bugs": {
+    "url": "https://github.com/rshackleton/gatsby-packages/issues"
   },
   "dependencies": {
     "@kentico/gatsby-source-kontent": "4.3.0",
     "@rshackleton/gatsby-transformer-kontent-image": "^0.1.0-beta.5"
+  },
+  "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/gatsby-theme-kontent#readme",
+  "keywords": [
+    "gatsby",
+    "gatsby-theme",
+    "kontent"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.19.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rshackleton/gatsby-packages.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write \"*.ts\" \"*.js\"",
+    "version": "npm run format && git add -A *"
   }
 }
