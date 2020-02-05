@@ -1,0 +1,16 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "build": "yarn workspace site build",
+    "clean": "yarn workspace site clean",
+    "develop": "yarn workspace site develop"
+  },
+  "workspaces": [
+    "packages/gatsby-theme-kontent",
+    "packages/site"
+  ]
+}

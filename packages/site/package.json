@@ -1,0 +1,18 @@
+{
+  "name": "site",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "clean": "gatsby clean",
+    "develop": "gatsby develop"
+  },
+  "dependencies": {
+    "gatsby": "^2.19.12",
+    "gatsby-theme-kontent": "^0.0.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  }
+}

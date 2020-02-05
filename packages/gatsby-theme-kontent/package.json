@@ -1,0 +1,10 @@
+{
+  "name": "gatsby-theme-kontent",
+  "version": "0.0.0",
+  "main": "index.js",
+  "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
+  "license": "MIT",
+  "peerDependencies": {
+    "gatsby": "^2.19.12"
+  }
+}
