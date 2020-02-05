@@ -4,7 +4,7 @@
   "version": "0.1.0-beta.3",
   "author": "Richard Shackleton <richardshackleton@netconstruct.co.uk>",
   "bugs": {
-    "url": "https://github.com/rshackleton/gatsby-transformer-kontent-image/issues"
+    "url": "https://github.com/rshackleton/gatsby-packages/issues"
   },
   "dependencies": {
     "@kentico/kontent-delivery": "^8.2.0",
@@ -27,7 +27,7 @@
     "ts-jest": "24.3.0",
     "typescript": "3.7.5"
   },
-  "homepage": "https://github.com/rshackleton/gatsby-transformer-kontent-image/tree/master#readme",
+  "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/gatsby-transformer-kontent-image#readme",
   "keywords": [
     "gatsby",
     "gatsby-plugin",
@@ -39,7 +39,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rshackleton/gatsby-transformer-kontent-image.git"
+    "url": "https://github.com/rshackleton/gatsby-packages.git"
   },
   "main": "index.js",
   "scripts": {
