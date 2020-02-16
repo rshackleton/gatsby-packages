@@ -1,6 +1,8 @@
 {
+  "npmClient": "yarn",
   "packages": [
-    "packages/*"
+    "packages/*",
+    "!packages/site"
   ],
   "version": "0.1.0-beta.6"
 }
