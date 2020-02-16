@@ -2,10 +2,13 @@
   "name": "root",
   "private": true,
   "devDependencies": {
-    "lerna": "^3.20.2"
+    "lerna": "^3.20.2",
+    "npm-run-all": "4.1.5"
   },
   "scripts": {
-    "build": "yarn workspace @rshackleton/site build",
+    "build": "run-s build:kontent-image build:site",
+    "build:kontent-image": "yarn workspace @rshackleton/gatsby-transformer-kontent-image build",
+    "build:site": "yarn workspace @rshackleton/site build",
     "clean": "yarn workspace @rshackleton/site clean",
     "develop": "yarn workspace @rshackleton/site develop"
   },
