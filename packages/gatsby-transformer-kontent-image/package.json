@@ -52,5 +52,8 @@
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
     "version": "npm run format && git add -A src"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
