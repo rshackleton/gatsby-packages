@@ -23,10 +23,10 @@ module.exports = {
         },
         kontentImage: {
           // @rshackleton/gatsby-transformer-kontent-image options
-        }
-      }
-    }
-  ]
+        },
+      },
+    },
+  ],
 };
 ```
 
@@ -36,4 +36,4 @@ The `gatsby-theme-kontent` theme includes two key plugins for developing a Gatsb
 
 Firstly, the official `@kentico/gatsby-source-kontent` plugin is included. The theme accepts the same options as the source plugin under the `kontent` configuration key.
 
-Secondly, the `@rshackleton/gatsby-transformer-kontent-image` plugin is included. This adds support for [Gatsby Image]() to the `KontentAsset` GraphQL type.
+Secondly, the `@rshackleton/gatsby-transformer-kontent-image` plugin is included. This adds support for [Gatsby Image](https://www.gatsbyjs.org/packages/gatsby-image/) to the `KontentAsset` GraphQL type.

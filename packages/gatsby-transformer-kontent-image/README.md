@@ -57,7 +57,7 @@ The following arguments are available:
         banner {
           value {
             fixed(width: 1000) {
-              ...GatsbyImageSharpFixed
+              ...KontentAssetFixed
             }
           }
         }
@@ -91,7 +91,7 @@ The following arguments are available:
         banner {
           value {
             fluid(maxWidth: 1000) {
-              ...GatsbyImageSharpFixed
+              ...KontentAssetFluid
             }
           }
         }
