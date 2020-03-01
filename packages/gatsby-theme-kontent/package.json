@@ -13,6 +13,7 @@
   "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/gatsby-theme-kontent#readme",
   "keywords": [
     "gatsby",
+    "gatsby-plugin",
     "gatsby-theme",
     "kontent"
   ],
