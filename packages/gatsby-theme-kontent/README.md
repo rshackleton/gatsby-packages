@@ -45,3 +45,7 @@ To contribute to this package please fork the repository to make your changes.
 This project makes use of [changesets](https://github.com/atlassian/changesets). When making changes please ensure a new changeset is created to define how the package versions should be updated.
 
 Once you are ready open a new PR into this repository with a clear and detailed description of the changes made and which issue(s) are affected.
+
+## Development
+
+To work on this repository you can use the yarn workspaces to test the plugin using the included Gatsby website. This can be done by running `yarn start` from the root or `site` directory.
