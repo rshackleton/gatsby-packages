@@ -11,6 +11,8 @@
     "build:site": "yarn workspace @rshackleton/site build",
     "clean": "yarn workspace @rshackleton/site clean",
     "develop": "yarn workspace @rshackleton/site develop",
+    "test": "run-s test:kontent-image",
+    "test:kontent-image": "yarn workspace @rshackleton/gatsby-transformer-kontent-image test",
     "prepare": "run-s build:kontent-image",
     "publish-ci": "lerna publish from-package -y --no-verify-access"
   },
