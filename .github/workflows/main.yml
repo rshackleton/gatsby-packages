@@ -2,7 +2,7 @@ name: Publish Packages
 
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   build:
@@ -17,13 +17,15 @@ jobs:
           version: 12.x
       - name: Install Dependencies
         run: yarn
-  
+
   release:
     name: Release
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
       - name: Setup Node.js
         uses: actions/setup-node@v1.1.0
         with:
