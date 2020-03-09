@@ -245,3 +245,11 @@ fragment KontentAssetFluid_withWebp_noBase64 on KontentAssetFluid {
 ## License
 
 Licensed under the [MIT License](https://github.com/rshackleton/gatsby-transformer-kontent-image/blob/master/LICENSE.md).
+
+## Contributing
+
+To contribute to this package please fork the repository to make your changes.
+
+This project makes use of [changesets](https://github.com/atlassian/changesets). When making changes please ensure a new changeset is created to define how the package versions should be updated.
+
+Once you are ready open a new PR into this repository with a clear and detailed description of the changes made and which issue(s) are affected.
