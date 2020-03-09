@@ -1,7 +1,7 @@
 {
   "name": "@rshackleton/gatsby-theme-kontent",
   "description": "Gatsby theme containing plugins to super-charge Kentico Kontent projects.",
-  "version": "0.1.0-beta.6",
+  "version": "0.1.0",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
   "bugs": {
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
