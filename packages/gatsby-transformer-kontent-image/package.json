@@ -51,7 +51,8 @@
     "prepare": "cross-env NODE_ENV=production npm run build",
     "prepublishOnly": "npm test && npm run lint",
     "preversion": "npm run lint",
-    "version": "npm run format && git add -A src"
+    "version": "npm run format && git add -A src",
+    "publish-ci": "lerna publish from-package -y --no-verify-access"
   },
   "publishConfig": {
     "access": "public"
