@@ -1,0 +1,21 @@
+name: Publish Packages
+
+on: [pull_request]
+
+jobs:
+  build:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.1.0
+        with:
+          version: 12.x
+      - name: Install Dependencies
+        run: yarn
+      - name: Test Packages
+        run: yarn test
+      - name: Build Packages
+        run: yarn build
