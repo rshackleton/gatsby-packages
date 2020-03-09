@@ -17,5 +17,8 @@
     "packages/gatsby-theme-kontent",
     "packages/gatsby-transformer-kontent-image",
     "site"
-  ]
+  ],
+  "dependencies": {
+    "@changesets/cli": "^2.5.2"
+  }
 }
