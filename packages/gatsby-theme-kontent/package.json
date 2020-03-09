@@ -28,8 +28,7 @@
   "main": "index.js",
   "scripts": {
     "format": "prettier --write \"*.ts\" \"*.js\"",
-    "version": "npm run format && git add -A *",
-    "publish-ci": "lerna publish from-package -y --no-verify-access"
+    "version": "npm run format && git add -A *"
   },
   "publishConfig": {
     "access": "public"
