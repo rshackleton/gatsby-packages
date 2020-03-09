@@ -22,6 +22,6 @@
     "site"
   ],
   "dependencies": {
-    "@changesets/cli": "2.5.2"
+    "@changesets/cli": "2.6.0"
   }
 }
