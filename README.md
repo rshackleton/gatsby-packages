@@ -40,3 +40,11 @@ This monorepo contains the following Gatsby packages:
 [![Netlify Status](https://api.netlify.com/api/v1/badges/ee8770de-1d01-4f7b-9226-c9a0fdebb9ac/deploy-status)](https://app.netlify.com/sites/gatsby-packages/deploys)
 
 The site folder contains a Gatsby website demonstrating the packages located in this monorepo.
+
+To run the Gatsby website you will need a `.env` file in the `site` folder containing the keys defined in `site/.env.sample`.
+
+## Contributing
+
+Thank you for choosing to contribute to this package, as well FOSS in general!
+
+To get started you can follow the instructions in the `README.md` of each package.
