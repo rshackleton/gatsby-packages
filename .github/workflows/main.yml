@@ -1,0 +1,54 @@
+name: Publish Packages
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.1.0
+        with:
+          version: 12.x
+      - name: Install Dependencies
+        run: yarn
+  
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.1.0
+        with:
+          version: 12.x
+      - name: Install Dependencies
+        run: yarn
+      - name: Create Release Pull Request
+        uses: changesets/action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB }}
+
+  publish-npm:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1.1.0
+        with:
+          version: 12.x
+          registry-url: https://registry.npmjs.org/
+      - name: Install Dependencies
+        run: yarn
+      - name: Publish Packages
+        run: yarn publish-ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
