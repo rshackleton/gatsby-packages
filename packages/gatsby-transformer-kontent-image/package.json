@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "2.23.0",
     "cross-env": "6.0.3",
     "eslint": "6.8.0",
-    "gatsby": "2.19.38",
+    "gatsby": "2.19.39",
     "jest": "24.9.0",
     "prettier": "1.19.1",
     "ts-jest": "24.3.0",
