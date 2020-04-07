@@ -10,7 +10,7 @@
     "@rshackleton/gatsby-theme-kontent": "^0.1.0-beta.6",
     "dotenv": "8.2.0",
     "gatsby": "2.20.13",
-    "gatsby-image": "2.3.1",
+    "gatsby-image": "2.3.2",
     "react": "16.13.0",
     "react-dom": "16.13.0"
   },
