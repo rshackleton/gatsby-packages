@@ -117,6 +117,17 @@ async function getBase64(
   targetHeight: number,
   args: KontentAssetArgs,
 ): Promise<string> {
+  const sourceUrl = source?.url;
+
+  // If no source has been provided then return early to avoid timeouts.
+  if (!sourceUrl || !sourceUrl.length) {
+    if (process.env.GATSBY_TRANSFORMER_KONTENT_DEBUG) {
+      console.log(`BASE64: Ignored asset due to missing source value`);
+    }
+
+    return '';
+  }
+
   const { height, width } = calculateAdjustedSize({
     fit: args.fit,
     originalHeight: source.height,
@@ -131,15 +142,13 @@ async function getBase64(
 
   const url = builder.getUrl();
 
-  if (process.env.GATSBY_TRANSFORMER_KONTENT_DEBUG) {
-    console.log(`Fetch: ${url}.`);
-  }
-
   // @todo: Add caching for base64 images.
   const result = await axios.get(url, { responseType: 'arraybuffer' });
 
   if (process.env.GATSBY_TRANSFORMER_KONTENT_DEBUG) {
-    console.log(`Fetch result: ${result.status} ${result.statusText}.`);
+    console.log(
+      `BASE64:\n  STATUS: ${result.status} ${result.statusText}\n  URL: ${sourceUrl}`,
+    );
   }
 
   const data = Buffer.from(result.data).toString('base64');
