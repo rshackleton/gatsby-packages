@@ -3,33 +3,45 @@ import React from "react";
 import { graphql } from "gatsby";
 
 export default ({ data }) => {
+  const homeData = data.allKontentItemHome.nodes[0];
+
+  const images = homeData.elements.image_examples?.linked_items?.map(image => ({
+    caption: image.elements.caption?.value,
+    fluid: image.elements.asset?.value?.[0]?.fluid
+  }));
+
   return (
-    <div style={{ margin: "0 auto", maxWidth: "500px" }}>
-      <Image
-        fluid={
-          data.allKontentItemHomePage.nodes[0].elements.background_image
-            .value[0].fluid
-        }
-      />
+    <div
+      style={{
+        display: "grid",
+        gap: 12,
+        gridTemplateColumns: "repeat(2, 1fr)",
+        margin: "auto",
+        maxWidth: 1000
+      }}
+    >
+      {images.map(img => img.fluid && <Image fluid={img.fluid} />)}
     </div>
   );
 };
 
 export const query = graphql`
   query HomePageQuery {
-    allKontentItemHomePage {
+    allKontentItemHome {
       nodes {
         elements {
-          background_image {
-            value {
-              fluid(maxWidth: 500) {
-                aspectRatio
-                base64
-                sizes
-                src
-                srcSet
-                srcSetWebp
-                srcWebp
+          image_examples {
+            linked_items {
+              ... on kontent_item_image {
+                elements {
+                  asset {
+                    value {
+                      fluid(maxWidth: 500) {
+                        ...KontentAssetFluid
+                      }
+                    }
+                  }
+                }
               }
             }
           }
