@@ -1,7 +1,7 @@
 {
   "name": "@rshackleton/site",
   "description": "Gatsby site to demonstrate the packages in this monorepo.",
-  "version": "0.1.0-beta.6",
+  "version": "0.1.0",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
   "bugs": {
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
