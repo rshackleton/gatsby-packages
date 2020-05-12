@@ -25,7 +25,7 @@
     "jest": "24.9.0",
     "prettier": "1.19.1",
     "ts-jest": "24.3.0",
-    "typescript": "3.8.3"
+    "typescript": "3.9.2"
   },
   "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/gatsby-transformer-kontent-image#readme",
   "keywords": [
