@@ -32,12 +32,14 @@ const createResolvers: GatsbyNode['createResolvers'] = (
 
   // Extend `KontentAsset` type with fields for Gatsby Image.
   createResolvers({
-    KontentAsset: {
+    // eslint-disable-next-line @typescript-eslint/camelcase
+    kontent_item_asset_element: {
       fixed: fixedResolver,
       fluid: fluidResolver,
       resize: resizeResolver,
     },
-    KontentRichTextImage: {
+    // eslint-disable-next-line @typescript-eslint/camelcase
+    kontent_item_rich_text_element_link: {
       fixed: fixedResolver,
       fluid: fluidResolver,
       resize: resizeResolver,
@@ -49,7 +51,8 @@ const createResolvers: GatsbyNode['createResolvers'] = (
     const { createNode } = actions;
 
     createResolvers({
-      KontentAsset: {
+      // eslint-disable-next-line @typescript-eslint/camelcase
+      kontent_item_asset_element: {
         localFile: {
           type: `File`,
           resolve(source: KontentAsset): Promise<FileSystemNode> {
@@ -64,7 +67,8 @@ const createResolvers: GatsbyNode['createResolvers'] = (
           },
         },
       },
-      KontentRichTextImage: {
+      // eslint-disable-next-line @typescript-eslint/camelcase
+      kontent_item_rich_text_element_link: {
         localFile: {
           type: `File`,
           resolve(source: KontentRichTextImage): Promise<FileSystemNode> {

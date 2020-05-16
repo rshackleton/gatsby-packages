@@ -6,15 +6,10 @@ module.exports = {
       resolve: `@rshackleton/gatsby-theme-kontent`,
       options: {
         kontent: {
-          deliveryClientConfig: {
-            projectId: process.env.KC_PROJECT_ID,
-            typeResolvers: [],
-            previewApiKey: process.env.KC_PREVIEW_KEY,
-            globalQueryConfig: {
-              usePreviewMode: !!process.env.KC_PREVIEW_KEY
-            }
-          },
-          languageCodenames: [`default`]
+          authorizationKey: process.env.KC_PREVIEW_KEY,
+          languageCodenames: [`default`],
+          projectId: process.env.KC_PROJECT_ID,
+          usePreviewUrl: !!process.env.KC_PREVIEW_KEY
         }
       }
     }
