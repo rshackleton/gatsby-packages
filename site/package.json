@@ -1,13 +1,13 @@
 {
   "name": "@rshackleton/site",
   "description": "Gatsby site to demonstrate the packages in this monorepo.",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
   "bugs": {
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
   },
   "dependencies": {
-    "@rshackleton/gatsby-theme-kontent": "^0.1.0-beta.6",
+    "@rshackleton/gatsby-theme-kontent": "^1.0.0",
     "dotenv": "8.2.0",
     "gatsby": "2.21.33",
     "gatsby-image": "2.4.3",
