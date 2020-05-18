@@ -1872,10 +1872,10 @@
   dependencies:
     core-js "^2.5.7"
 
-"@kentico/gatsby-source-kontent@6.0.0":
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/@kentico/gatsby-source-kontent/-/gatsby-source-kontent-6.0.0.tgz#973edd8786126e25ff13a0a9d5e3c936160d1149"
-  integrity sha512-8qmmQpJU6TajKQ6PDzQT57oIAlwTja5FLxdRtxmuu00bpWYlopyARvYiUa2E1Z/EAB+XRkSsuzpiClfo//YxSA==
+"@kentico/gatsby-source-kontent@^6.0.1":
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/@kentico/gatsby-source-kontent/-/gatsby-source-kontent-6.0.1.tgz#f82dd879c19d8031fb0ee8aff4c9e3ea4b537c5b"
+  integrity sha512-qk4hsNwKGNnvZbfrMToc7y+QN1BbgexSSOl/omNbWnhUi9jm8/bP3/B3lVhntV9yEf0ZVVJO7Yfpl25PsVPPlg==
   dependencies:
     "@kentico/kontent-webhook-helper" "^1.1.0"
     "@types/fs-extra" "^8.0.1"

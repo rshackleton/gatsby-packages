@@ -39,7 +39,7 @@ const createResolvers: GatsbyNode['createResolvers'] = (
       resize: resizeResolver,
     },
     // eslint-disable-next-line @typescript-eslint/camelcase
-    kontent_item_rich_text_element_link: {
+    kontent_item_rich_text_element_image: {
       fixed: fixedResolver,
       fluid: fluidResolver,
       resize: resizeResolver,
@@ -68,7 +68,7 @@ const createResolvers: GatsbyNode['createResolvers'] = (
         },
       },
       // eslint-disable-next-line @typescript-eslint/camelcase
-      kontent_item_rich_text_element_link: {
+      kontent_item_rich_text_element_image: {
         localFile: {
           type: `File`,
           resolve(source: KontentRichTextImage): Promise<FileSystemNode> {

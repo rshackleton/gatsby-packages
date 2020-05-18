@@ -7,7 +7,7 @@
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
   },
   "dependencies": {
-    "@kentico/gatsby-source-kontent": "6.0.0",
+    "@kentico/gatsby-source-kontent": "^6.0.1",
     "@rshackleton/gatsby-transformer-kontent-image": "^1.0.0"
   },
   "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/gatsby-theme-kontent#readme",
