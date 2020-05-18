@@ -1,7 +1,7 @@
 {
   "name": "@rshackleton/gatsby-transformer-kontent-image",
   "description": "Transforms assets from Kontent.ai into nodes usable by Gatsby Image.",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "author": "Richard Shackleton <rshackleton@live.co.uk> (@shackleberry112)",
   "bugs": {
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
