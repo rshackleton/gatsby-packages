@@ -1,5 +1,12 @@
 # @rshackleton/gatsby-theme-kontent
 
+## 1.0.1
+
+### Patch Changes
+
+- Updated dependencies [5f411d2]
+  - @rshackleton/gatsby-transformer-kontent-image@2.0.0
+
 ## 1.0.0
 
 ### Major Changes

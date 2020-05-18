@@ -1,5 +1,11 @@
 # @rshackleton/gatsby-transformer-kontent-image
 
+## 2.0.0
+
+### Major Changes
+
+- 5f411d2: Update resolvers to target fixed type name `kontent_item_rich_text_element_image`.
+
 ## 1.0.0
 
 ### Major Changes
