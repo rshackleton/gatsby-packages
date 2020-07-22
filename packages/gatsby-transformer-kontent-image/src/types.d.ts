@@ -67,6 +67,7 @@ interface KontentAssetFluid {
 interface KontentAssetFluidArgs extends KontentAssetArgs {
   maxHeight?: number;
   maxWidth: number;
+  sizes?: string;
   srcSetBreakpoints?: number[];
 }
 
@@ -82,4 +83,20 @@ interface KontentAssetResizeArgs extends KontentAssetArgs {
   base64?: boolean;
   height?: number;
   width: number;
+}
+
+interface ResolverInfo {
+  fieldNodes: [
+    {
+      selectionSet: {
+        selections: [
+          {
+            name: {
+              value: string;
+            };
+          },
+        ];
+      };
+    },
+  ];
 }
