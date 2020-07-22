@@ -5,6 +5,7 @@ import {
   KontentAssetFixed,
   KontentAssetFixedArgs,
   KontentRichTextImage,
+  ResolverInfo,
 } from '../types';
 
 const DEFAULT_BASE64_WIDTH = 30;
@@ -22,8 +23,18 @@ const fixedResolver = {
   async resolve(
     source: KontentAsset | KontentRichTextImage,
     args: KontentAssetFixedArgs,
+    _: unknown,
+    info: ResolverInfo,
   ): Promise<KontentAssetFixed> {
-    const base64 = await getBase64(source, DEFAULT_BASE64_WIDTH, 0, args);
+    let base64 = '';
+
+    // Get the fields selected in the query.
+    const selections = getSelections(info);
+
+    // Only retrieve base64 string if field was requested.
+    if (selections.includes('base64')) {
+      base64 = await getBase64(source, DEFAULT_BASE64_WIDTH, 0, args);
+    }
 
     const srcs = DEFAULT_SIZES.map(size => {
       const { height, url, width } = getAssetUrl(
@@ -69,3 +80,11 @@ const fixedResolver = {
 };
 
 export default fixedResolver;
+
+function getSelections(info: ResolverInfo): string[] {
+  const fieldNames = info.fieldNodes[0].selectionSet.selections.map(
+    sel => sel.name.value,
+  );
+
+  return fieldNames;
+}
