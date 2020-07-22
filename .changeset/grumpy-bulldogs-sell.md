@@ -1,6 +1,6 @@
 ---
-"@rshackleton/gatsby-transformer-kontent-image": patch
-"@rshackleton/site": patch
+"@rshackleton/gatsby-transformer-kontent-image": minor
+"@rshackleton/site": minor
 ---
 
 Fix #152 #153 #154
