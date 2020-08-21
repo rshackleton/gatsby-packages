@@ -7,7 +7,7 @@
     "url": "https://github.com/rshackleton/gatsby-packages/issues"
   },
   "dependencies": {
-    "@kentico/kontent-delivery": "^8.2.0",
+    "@kentico/kontent-delivery": "^9.0.0",
     "@types/fs-extra": "^8.0.1",
     "axios": "^0.20.0",
     "fs-extra": "^8.1.0",
