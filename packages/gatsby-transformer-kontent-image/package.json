@@ -11,8 +11,8 @@
     "@types/fs-extra": "^8.0.1",
     "axios": "^0.21.0",
     "fs-extra": "^8.1.0",
-    "gatsby-plugin-sharp": "^2.3.13",
-    "gatsby-source-filesystem": "^2.1.46"
+    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-source-filesystem": "^2.11.1"
   },
   "devDependencies": {
     "@types/jest": "24.9.1",
@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "2.34.0",
     "cross-env": "6.0.3",
     "eslint": "6.8.0",
-    "gatsby": "2.22.12",
+    "gatsby": "2.32.12",
     "jest": "24.9.0",
     "prettier": "1.19.1",
     "ts-jest": "24.3.0",
