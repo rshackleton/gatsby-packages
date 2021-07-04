@@ -22,9 +22,9 @@
     "cross-env": "6.0.3",
     "eslint": "6.8.0",
     "gatsby": "2.32.13",
-    "jest": "24.9.0",
+    "jest": "27.0.6",
     "prettier": "1.19.1",
-    "ts-jest": "24.3.0",
+    "ts-jest": "27.0.3",
     "typescript": "3.9.10"
   },
   "homepage": "https://github.com/rshackleton/gatsby-packages/tree/master/packages/gatsby-transformer-kontent-image#readme",
