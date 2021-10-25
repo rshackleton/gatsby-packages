@@ -2148,20 +2148,20 @@
     lodash "^4.17.15"
     retry-axios "^2.1.2"
 
-"@kentico/kontent-core@5.0.1":
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/@kentico/kontent-core/-/kontent-core-5.0.1.tgz#b15a23e3ef0f8526a73643f9194c2d261e583185"
-  integrity sha512-POv48XnsYj1Azc5/zlkP82ZjpeiEMUFy84wYDmz8qM90KwoYAem9j3MNpzBBD36YlqYANB6zQzMlBMfQRQTfEg==
+"@kentico/kontent-core@8.1.0":
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/@kentico/kontent-core/-/kontent-core-8.1.0.tgz#4912c1b36cf046316cdd4581b19c6c8e8a42c900"
+  integrity sha512-hfRr0z6sJ24HUaWAuR7kmKbYOIxobbFGSdRVuDjENAZiTIKuiGE6Jv82sNuV3LPnwR0Hg2f8ncBliVI04CkP7w==
   dependencies:
-    axios "0.19.0"
+    axios "0.21.1"
 
-"@kentico/kontent-delivery@^8.2.0":
-  version "8.2.0"
-  resolved "https://registry.yarnpkg.com/@kentico/kontent-delivery/-/kontent-delivery-8.2.0.tgz#6c3feb84e8d934a94c085210ceea492ed6eeb9c9"
-  integrity sha512-M7HBv18dCxDLpFRHRnjm2xcvBq9nD/LDuHBpfrwtr4beGJ+8QWr/u8AAhBJXM2uLKn4M/dt/f35HvzpPdRB/zA==
+"@kentico/kontent-delivery@^10.0.0":
+  version "10.4.1"
+  resolved "https://registry.yarnpkg.com/@kentico/kontent-delivery/-/kontent-delivery-10.4.1.tgz#d9799cb5a21f4efd970e8c0bd6a409a0c9994c47"
+  integrity sha512-4D202ALStSuZdpiIyGDY80GZ1sZI6aRyV7rTiV6SmoqZXnA1rUm6nwaSp3K8NDZ3wtqQ3NzBdcT91kSk2BlP1w==
   dependencies:
-    "@kentico/kontent-core" "5.0.1"
-    parse5 "5.1.1"
+    "@kentico/kontent-core" "8.1.0"
+    parse5 "6.0.1"
     reflect-metadata "0.1.13"
 
 "@kentico/kontent-webhook-helper@^1.1.0":
@@ -4329,13 +4329,12 @@ axe-core@^4.0.2:
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.1.4.tgz#f19cd99a84ee32a318b9c5b5bb8ed373ad94f143"
   integrity sha512-Pdgfv6iP0gNx9ejRGa3zE7Xgkj/iclXqLfe7BnatdZz0QnLZ3jrRHUVH8wNSdN68w05Sk3ShGTb3ydktMTooig==
 
-axios@0.19.0:
-  version "0.19.0"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.19.0.tgz#8e09bff3d9122e133f7b8101c8fbdd00ed3d2ab8"
-  integrity sha512-1uvKqKQta3KBxIz14F2v06AEHZ/dIoeKfbTRkK1E5oqjDnuEerLmYTgJB5AiQZHJcljpg1TuRzdjDR06qNk0DQ==
+axios@0.21.1, axios@^0.21.1:
+  version "0.21.1"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
+  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
-    follow-redirects "1.5.10"
-    is-buffer "^2.0.2"
+    follow-redirects "^1.10.0"
 
 axios@^0.19.2:
   version "0.19.2"
@@ -4348,13 +4347,6 @@ axios@^0.21.0:
   version "0.21.0"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.0.tgz#26df088803a2350dff2c27f96fef99fe49442aca"
   integrity sha512-fmkJBknJKoZwem3/IKSSLpkdNXZeBu5Q7GA/aRsr2btgrptmSCxi2oFjZHqGdK9DoTil9PIHlPIZw2EcRJXRvw==
-  dependencies:
-    follow-redirects "^1.10.0"
-
-axios@^0.21.1:
-  version "0.21.1"
-  resolved "https://registry.yarnpkg.com/axios/-/axios-0.21.1.tgz#22563481962f4d6bde9a76d516ef0e5d3c09b2b8"
-  integrity sha512-dKQiRHxGD9PPRIUNIWvZhPTPpl1rf/OxTYKsqKUDjBwYylTvV7SjSHJb9ratfyzM6wCdLCOYLzs73qpg5c4iGA==
   dependencies:
     follow-redirects "^1.10.0"
 
@@ -10280,7 +10272,7 @@ is-buffer@^1.1.5:
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   integrity sha512-NcdALwpXkTm5Zvvbk7owOUSvVvBKDgKP5/ewfXEznmQFfs4ZRmanOeKBTjRVjka3QFoN6XJ+9F3USqfHqTaU5w==
 
-is-buffer@^2.0.0, is-buffer@^2.0.2:
+is-buffer@^2.0.0:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-2.0.4.tgz#3e572f23c8411a5cfd9557c849e3665e0b290623"
   integrity sha512-Kq1rokWXOPXWuaMAqZiJW4XxsmD9zGx9q4aePabbn3qCRGedtH7Cm+zV8WETitMfu1wdh+Rvd6w5egwSngUX2A==
@@ -13777,10 +13769,10 @@ parse5@4.0.0:
   resolved "https://registry.yarnpkg.com/parse5/-/parse5-4.0.0.tgz#6d78656e3da8d78b4ec0b906f7c08ef1dfe3f608"
   integrity sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA==
 
-parse5@5.1.1:
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
-  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
+parse5@6.0.1:
+  version "6.0.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-6.0.1.tgz#e1a1c085c569b3dc08321184f19a39cc27f7c30b"
+  integrity sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==
 
 parseqs@0.0.6:
   version "0.0.6"
