@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@kentico/kontent-delivery": "^8.2.0",
-    "@types/fs-extra": "^8.0.1",
+    "@types/fs-extra": "^9.0.0",
     "axios": "^0.24.0",
     "fs-extra": "^8.1.0",
     "gatsby-plugin-sharp": "^2.14.3",
