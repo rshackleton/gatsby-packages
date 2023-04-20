@@ -11,7 +11,7 @@
     "@types/fs-extra": "^8.0.1",
     "axios": "^0.24.0",
     "fs-extra": "^8.1.0",
-    "gatsby-plugin-sharp": "^2.14.3",
+    "gatsby-plugin-sharp": "^4.25.1",
     "gatsby-source-filesystem": "^2.11.1"
   },
   "devDependencies": {
