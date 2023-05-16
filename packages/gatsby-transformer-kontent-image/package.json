@@ -12,7 +12,7 @@
     "axios": "^0.24.0",
     "fs-extra": "^8.1.0",
     "gatsby-plugin-sharp": "^2.14.3",
-    "gatsby-source-filesystem": "^2.11.1"
+    "gatsby-source-filesystem": "^5.0.0"
   },
   "devDependencies": {
     "@types/jest": "24.9.1",
@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "2.34.0",
     "cross-env": "6.0.3",
     "eslint": "6.8.0",
-    "gatsby": "2.32.13",
+    "gatsby": "5.10.0",
     "jest": "24.9.0",
     "prettier": "1.19.1",
     "ts-jest": "24.3.0",
@@ -36,7 +36,7 @@
   "license": "MIT",
   "peerDependencies": {
     "@kentico/gatsby-source-kontent": "^6.0.1 || ^6.0.1",
-    "gatsby": "^2.19.12"
+    "gatsby": "^2.19.12 || ^5.0.0"
   },
   "repository": {
     "type": "git",
